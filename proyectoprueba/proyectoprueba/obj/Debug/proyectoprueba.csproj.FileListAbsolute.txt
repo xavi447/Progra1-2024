@@ -1,0 +1,7 @@
+C:\Users\Main User\OneDrive\Escritorio\Progra1-2024\proyectoprueba\proyectoprueba\bin\Debug\proyectoprueba.exe.config
+C:\Users\Main User\OneDrive\Escritorio\Progra1-2024\proyectoprueba\proyectoprueba\bin\Debug\proyectoprueba.exe
+C:\Users\Main User\OneDrive\Escritorio\Progra1-2024\proyectoprueba\proyectoprueba\bin\Debug\proyectoprueba.pdb
+C:\Users\Main User\OneDrive\Escritorio\Progra1-2024\proyectoprueba\proyectoprueba\obj\Debug\proyectoprueba.csproj.AssemblyReference.cache
+C:\Users\Main User\OneDrive\Escritorio\Progra1-2024\proyectoprueba\proyectoprueba\obj\Debug\proyectoprueba.csproj.CoreCompileInputs.cache
+C:\Users\Main User\OneDrive\Escritorio\Progra1-2024\proyectoprueba\proyectoprueba\obj\Debug\proyectoprueba.exe
+C:\Users\Main User\OneDrive\Escritorio\Progra1-2024\proyectoprueba\proyectoprueba\obj\Debug\proyectoprueba.pdb
