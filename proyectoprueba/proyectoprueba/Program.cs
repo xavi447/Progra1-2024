@@ -12,6 +12,7 @@ namespace proyectoprueba
         {
             //prioridad de los operadores aritmeticos
             // obtener la nota final de la materia de prograI
+            Console.WriteLine("ingrese las notas del computo 1");
             Console.Write("lab1: ");
             double lab1 = double.Parse(Console.ReadLine());
 
@@ -25,6 +26,7 @@ namespace proyectoprueba
             Console.WriteLine("la nota de c1 es: {0}", c1);
 
             //computo2
+            Console.WriteLine("ingrese las notas del computo 2");
             Console.Write("lab1: ");
             double lab13 = double.Parse(Console.ReadLine());
 
@@ -36,6 +38,23 @@ namespace proyectoprueba
 
             double c2 = lab13 * 30 / 100 + lab4 * 30 / 100 + parcial2 * 40 / 100;
             Console.WriteLine("la nota de c2 es: {0}", c2);
+
+            //computo 3
+            Console.WriteLine("ingrese las notas del computo 3");
+            Console.Write("lab1: ");
+            double lab5 = double.Parse(Console.ReadLine());
+
+            Console.Write("lab2: ");
+            double lab6 = double.Parse(Console.ReadLine());
+
+            Console.Write("parcial3: ");
+            double parcial3 = double.Parse(Console.ReadLine());
+
+            double c3 = lab5 * 30 / 100 + lab6 * 30 / 100 + parcial3 * 40 / 100;
+            Console.WriteLine("la nota de c3 es: {0}", c3);
+            // nota final
+            double NF = c1 + c2 + c3 ;
+            Console.WriteLine("la nota final de la materia es:{0} ", NF/3);
             // tarea de nota c3 y nota final.
             //pause
             Console.ReadLine();
