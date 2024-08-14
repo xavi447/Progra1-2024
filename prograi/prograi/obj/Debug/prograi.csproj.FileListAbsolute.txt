@@ -1,0 +1,7 @@
+C:\Users\Main User\OneDrive\Escritorio\Progra1-2024.git\prograi\prograi\bin\Debug\prograi.exe.config
+C:\Users\Main User\OneDrive\Escritorio\Progra1-2024.git\prograi\prograi\bin\Debug\prograi.exe
+C:\Users\Main User\OneDrive\Escritorio\Progra1-2024.git\prograi\prograi\bin\Debug\prograi.pdb
+C:\Users\Main User\OneDrive\Escritorio\Progra1-2024.git\prograi\prograi\obj\Debug\prograi.csproj.AssemblyReference.cache
+C:\Users\Main User\OneDrive\Escritorio\Progra1-2024.git\prograi\prograi\obj\Debug\prograi.csproj.CoreCompileInputs.cache
+C:\Users\Main User\OneDrive\Escritorio\Progra1-2024.git\prograi\prograi\obj\Debug\prograi.exe
+C:\Users\Main User\OneDrive\Escritorio\Progra1-2024.git\prograi\prograi\obj\Debug\prograi.pdb
