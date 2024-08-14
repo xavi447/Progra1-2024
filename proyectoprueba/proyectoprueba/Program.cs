@@ -12,7 +12,10 @@ namespace proyectoprueba
         {
             //uso de matrices 
             int[] numeros = new int[]{2, 8, 9, 10, 1, 3};
-            Console.WriteLine("el numero de la posicision 0 es: {0}", numeros[0]);
+           for (int i=0; i<numeros.Length; i++)
+            {
+                Console.WriteLine("Indice: {0}={1}", i, numeros[i]);
+            }
 
             // pausa 
             Console.ReadKey();
