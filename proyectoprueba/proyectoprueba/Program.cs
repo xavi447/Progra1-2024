@@ -14,11 +14,11 @@ namespace proyectoprueba
 
             double[,] matriz = new double[,]
             {
-                { 0.01, 487.6, 0, 0 },
-                { 487.61, 642.85, 10,17.48},
-                { 642.86, 915.81, 10,32.70 },
-                { 915.82, 2058.67, 20, 60.00},
-                { 2058.68, 9999999, 30, 288.57 },
+                { 0.01, 472.00, 0, 0 },
+                { 472.01, 895.24, 10,17.67},
+                { 895.25, 2038.10, 20,60.00 },
+                { 2038.11, 9999999, 30, 288.57},
+                
             };
             Console.Write("Sueldo: ");
             double sueldo = double.Parse(Console.ReadLine()),
@@ -28,7 +28,7 @@ namespace proyectoprueba
                
             sueldo -= afp;
             double isr = 0;
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 4; i++)
             {
                 if (sueldo >= matriz[i, 0] && sueldo <= matriz[i, 1])
                 {
