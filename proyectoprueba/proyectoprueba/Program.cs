@@ -11,12 +11,19 @@ namespace proyectoprueba
         static void Main(string[] args)
         {
             //uso de matrices 
-            int[] numeros = new int[]{2, 8, 9, 10, 1, 3};
-           for (int i=0; i<numeros.Length; i++)
-            {
-                Console.WriteLine("Indice: {0}={1}", i, numeros[i]);
-            }
+            int[,] matriz = new int[,] {
 
+                {2,8,6,7,5 },
+                {7,9,1,6,3 }
+            };
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                    Console.Write("{0} ", matriz[i, j]);
+                {
+                    Console.WriteLine("\n");
+                }
+            }
             // pausa 
             Console.ReadKey();
         }
