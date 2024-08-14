@@ -10,15 +10,14 @@ namespace prograi
     {
         static void Main(string[] args)
         {
-            //obtener la secuencia de fibonacci
-            int a = 0, b = 1, c = 1;
-            while (c < 100)
+            //determinar si cad numero de la serie es par o impar
+            int[] serie = new int[] { 5, 9, 4, 6, 3, 2 };
+            foreach(int num in serie)
             {
-                Console.WriteLine("{0}+{1}={2}", a, b, c);
-                b = a;
-                a = c;
-                c = a + b;
+                Console.WriteLine("El num {0} es {1}", num, num % 2 == 0 ? "par":"Impar" ) ;
             }
+            
+            
             Console.ReadLine();
         }
     }
