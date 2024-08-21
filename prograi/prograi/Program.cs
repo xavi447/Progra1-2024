@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
 namespace prograi
 {
     class Program
@@ -37,7 +39,7 @@ namespace prograi
                         break;
 
                     case 3:
-
+                        Cvolumen();
                         break;
 
                     case 4:
@@ -53,7 +55,7 @@ namespace prograi
                         break;
 
                     case 7:
-                        
+
                         continuar = "n";
                         break;
                     default:
@@ -80,7 +82,7 @@ namespace prograi
         }
         static void Cmonedas()
         {
-            
+
             string[] monedas = { "Dólar", "Euro", "Peso MX", "Peso col", "Córdobas", "Quetzal", "Lempira", "Yenes", "Libras Esterlinas", "Pesos Arg" };
             double[] tasasMoneda = { 1, 0.85, 17.20, 4174.89, 36.42, 7.72, 24.67, 148.65, 0.76, 365.20 };
 
@@ -116,13 +118,13 @@ namespace prograi
                 double resultado = cantidad * (tasasMoneda[mconvertida] / tasasMoneda[maconvertir]);
                 Console.WriteLine($"{cantidad} {monedas[maconvertir]} = {resultado} {monedas[mconvertida]}");
 
-                
-                return ;
-                
+
+                return;
+
             }
-           
+
         }
-        
+
         static void Lconvertir()
         {
 
@@ -168,11 +170,11 @@ namespace prograi
                 return;
             }
 
-           
+
 
         }
         static void Ctiempo()
-            
+
         {
             Console.Clear();
             double[,] conversion = {
@@ -315,17 +317,51 @@ namespace prograi
                 Console.WriteLine($"{i + 1}. {opciones[i]}");
             }
         }
+        static void Cvolumen() {
+            var conversion = new Dictionary<string, double>
+        {
+            { "kilómetros cúbicos", 1e18 },
+            { "hectómetros cúbicos", 1e15 },
+            { "decámetros cúbicos", 1e12 },
+            { "metros cúbicos", 1e9 },
+            { "decímetros cúbicos", 1e6 },
+            { "centímetros cúbicos", 1e3 },
+            { "milímetros cúbicos", 1 }
+        };
+            Console.Clear();
+            var unidades = new List<string>(conversion.Keys);
 
+            Console.WriteLine("Conversor de Volumen: ");
+            Console.WriteLine("Ingrese la cantidad a convertir: ");
+            double cantidad = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Seleccione el dato de entrada:");
+            MostrarOp(unidades);
+
+            int Entrada = Convert.ToInt32(Console.ReadLine()) - 1;
+
+            Console.WriteLine("Seleciones el dato de salida:");
+            MostrarOp(unidades);
+
+            int Salida = Convert.ToInt32(Console.ReadLine()) - 1;
+
+            string entrada = unidades[Entrada];
+            string salida = unidades[Salida];
+
+            double resultado = cantidad * conversion[entrada] / conversion[salida];
+
+            Console.WriteLine($"La cantidad de {cantidad} {entrada} es equivalente a {resultado} {salida}.");
+            Console.ReadLine();
+            return;
+        }
+        static void MostrarOp(List<string> opciones)
+        {
+            for (int i = 0; i < opciones.Count; i++)
+            {
+                Console.WriteLine($"{i + 1}. {opciones[i]}");
+            }
+        }
     }
+}
 
 
-    }
-
-
-
-
-    
-
-        
-        
-    
