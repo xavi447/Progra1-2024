@@ -36,29 +36,20 @@ namespace prograi
         }
         static void Impuesto()
         {
-            double[,] matriz = new double[,] {
+            Console.WriteLine("impuesto de actividad economica");
+            decimal actividad = Convert.ToDecimal(Console.ReadLine());
+            decimal rango = 1000.01m;
+            decimal valor = 1000m;
+            decimal adicional = 3m;
+            decimal precio = 3m;
+            decimal monto;
 
-            { 0.01, 500, 1.5, 0 },
-            { 500.01, 1000, 1.5, 3 },
-            {1000.01, 2000, 3, 3 },
-            {2000.01, 3000, 6, 3 },
-            {3000.01, 6000, 9, 3 },
-            {8000.01, 18000,15,2 },
-            {18000.01, 30000, 39, 2 },
-            {30000.01, 60000, 63, 1 },
-            {60000.01, 100000, 93, 0.8 },
-            {100000.01, 200000, 125, 0.7 },
-            {200000.01, 300000, 195, 0.6 },
-            {300000.01, 400000, 255, 0.45 },
-            {400000.01, 500000, 300, 0.4 },
-            {500000.01, 1000000, 340, 0.30 },
-            {1000000.01, 99999999, 490, 0.18 }
+            decimal diferencia = actividad - rango;
+            monto = (diferencia / valor) * adicional + precio;
 
-         };
-
-            Console.WriteLine("Ingrese el monto: ");
-            double monto = double.Parse(Console.ReadLine());
-            for (double i = 0; i == monto; i++) ;
+            Console.WriteLine("l valor economico de la actividad economica es: $" + actividad);
+            Console.WriteLine("monto a pagar es: $" + monto.ToString("f2"));
+            Console.ReadLine();
               
                 
             
