@@ -30,22 +30,22 @@ namespace WindowsFormsApp1
         private void InitializeComponent()
         {
             this.grbDatosAlumnos = new System.Windows.Forms.GroupBox();
-            this.lblCodigoAlumno = new System.Windows.Forms.Label();
-            this.txtCodigoAlumnos = new System.Windows.Forms.TextBox();
-            this.txtNombreAlumno = new System.Windows.Forms.TextBox();
-            this.lblNombreAlumno = new System.Windows.Forms.Label();
-            this.txtDireccionAlumno = new System.Windows.Forms.TextBox();
-            this.lblDireccionAlumno = new System.Windows.Forms.Label();
-            this.txtTelefonoAlumno = new System.Windows.Forms.TextBox();
-            this.lblTelefonoAlumno = new System.Windows.Forms.Label();
             this.txtDuiAlumno = new System.Windows.Forms.TextBox();
             this.lblDuiAlumno = new System.Windows.Forms.Label();
+            this.txtTelefonoAlumno = new System.Windows.Forms.TextBox();
+            this.lblTelefonoAlumno = new System.Windows.Forms.Label();
+            this.txtDireccionAlumno = new System.Windows.Forms.TextBox();
+            this.lblDireccionAlumno = new System.Windows.Forms.Label();
+            this.txtNombreAlumno = new System.Windows.Forms.TextBox();
+            this.lblNombreAlumno = new System.Windows.Forms.Label();
+            this.txtCodigoAlumnos = new System.Windows.Forms.TextBox();
+            this.lblCodigoAlumno = new System.Windows.Forms.Label();
             this.grbNavegacionAlumnos = new System.Windows.Forms.GroupBox();
-            this.grbEdicionAlumnos = new System.Windows.Forms.GroupBox();
-            this.btnPrimerAlumno = new System.Windows.Forms.Button();
-            this.btnAnteriorAlumno = new System.Windows.Forms.Button();
-            this.btnSiguienteAlumno = new System.Windows.Forms.Button();
             this.btnUltimoAlumno = new System.Windows.Forms.Button();
+            this.btnSiguienteAlumno = new System.Windows.Forms.Button();
+            this.btnAnteriorAlumno = new System.Windows.Forms.Button();
+            this.btnPrimerAlumno = new System.Windows.Forms.Button();
+            this.grbEdicionAlumnos = new System.Windows.Forms.GroupBox();
             this.grbDatosAlumnos.SuspendLayout();
             this.grbNavegacionAlumnos.SuspendLayout();
             this.SuspendLayout();
@@ -69,22 +69,56 @@ namespace WindowsFormsApp1
             this.grbDatosAlumnos.TabStop = false;
             this.grbDatosAlumnos.Text = "Datos Alumnos";
             // 
-            // lblCodigoAlumno
+            // txtDuiAlumno
             // 
-            this.lblCodigoAlumno.AutoSize = true;
-            this.lblCodigoAlumno.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigoAlumno.Location = new System.Drawing.Point(45, 48);
-            this.lblCodigoAlumno.Name = "lblCodigoAlumno";
-            this.lblCodigoAlumno.Size = new System.Drawing.Size(79, 20);
-            this.lblCodigoAlumno.TabIndex = 0;
-            this.lblCodigoAlumno.Text = "Codigo:";
+            this.txtDuiAlumno.Location = new System.Drawing.Point(158, 233);
+            this.txtDuiAlumno.Name = "txtDuiAlumno";
+            this.txtDuiAlumno.Size = new System.Drawing.Size(249, 20);
+            this.txtDuiAlumno.TabIndex = 7;
             // 
-            // txtCodigoAlumnos
+            // lblDuiAlumno
             // 
-            this.txtCodigoAlumnos.Location = new System.Drawing.Point(158, 48);
-            this.txtCodigoAlumnos.Name = "txtCodigoAlumnos";
-            this.txtCodigoAlumnos.Size = new System.Drawing.Size(100, 20);
-            this.txtCodigoAlumnos.TabIndex = 1;
+            this.lblDuiAlumno.AutoSize = true;
+            this.lblDuiAlumno.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDuiAlumno.Location = new System.Drawing.Point(45, 233);
+            this.lblDuiAlumno.Name = "lblDuiAlumno";
+            this.lblDuiAlumno.Size = new System.Drawing.Size(47, 20);
+            this.lblDuiAlumno.TabIndex = 6;
+            this.lblDuiAlumno.Text = "Dui:";
+            // 
+            // txtTelefonoAlumno
+            // 
+            this.txtTelefonoAlumno.Location = new System.Drawing.Point(158, 190);
+            this.txtTelefonoAlumno.Name = "txtTelefonoAlumno";
+            this.txtTelefonoAlumno.Size = new System.Drawing.Size(249, 20);
+            this.txtTelefonoAlumno.TabIndex = 5;
+            // 
+            // lblTelefonoAlumno
+            // 
+            this.lblTelefonoAlumno.AutoSize = true;
+            this.lblTelefonoAlumno.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefonoAlumno.Location = new System.Drawing.Point(45, 190);
+            this.lblTelefonoAlumno.Name = "lblTelefonoAlumno";
+            this.lblTelefonoAlumno.Size = new System.Drawing.Size(92, 20);
+            this.lblTelefonoAlumno.TabIndex = 4;
+            this.lblTelefonoAlumno.Text = "Telefono:";
+            // 
+            // txtDireccionAlumno
+            // 
+            this.txtDireccionAlumno.Location = new System.Drawing.Point(158, 141);
+            this.txtDireccionAlumno.Name = "txtDireccionAlumno";
+            this.txtDireccionAlumno.Size = new System.Drawing.Size(249, 20);
+            this.txtDireccionAlumno.TabIndex = 5;
+            // 
+            // lblDireccionAlumno
+            // 
+            this.lblDireccionAlumno.AutoSize = true;
+            this.lblDireccionAlumno.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDireccionAlumno.Location = new System.Drawing.Point(45, 141);
+            this.lblDireccionAlumno.Name = "lblDireccionAlumno";
+            this.lblDireccionAlumno.Size = new System.Drawing.Size(98, 20);
+            this.lblDireccionAlumno.TabIndex = 4;
+            this.lblDireccionAlumno.Text = "Direccion:";
             // 
             // txtNombreAlumno
             // 
@@ -104,56 +138,22 @@ namespace WindowsFormsApp1
             this.lblNombreAlumno.TabIndex = 2;
             this.lblNombreAlumno.Text = "Nombre:";
             // 
-            // txtDireccionAlumno
+            // txtCodigoAlumnos
             // 
-            this.txtDireccionAlumno.Location = new System.Drawing.Point(158, 141);
-            this.txtDireccionAlumno.Name = "txtDireccionAlumno";
-            this.txtDireccionAlumno.Size = new System.Drawing.Size(249, 20);
-            this.txtDireccionAlumno.TabIndex = 5;
+            this.txtCodigoAlumnos.Location = new System.Drawing.Point(158, 48);
+            this.txtCodigoAlumnos.Name = "txtCodigoAlumnos";
+            this.txtCodigoAlumnos.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigoAlumnos.TabIndex = 1;
             // 
-            // lblDireccionAlumno
+            // lblCodigoAlumno
             // 
-            this.lblDireccionAlumno.AutoSize = true;
-            this.lblDireccionAlumno.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDireccionAlumno.Location = new System.Drawing.Point(45, 141);
-            this.lblDireccionAlumno.Name = "lblDireccionAlumno";
-            this.lblDireccionAlumno.Size = new System.Drawing.Size(98, 20);
-            this.lblDireccionAlumno.TabIndex = 4;
-            this.lblDireccionAlumno.Text = "Direccion:";
-            // 
-            // txtTelefonoAlumno
-            // 
-            this.txtTelefonoAlumno.Location = new System.Drawing.Point(158, 190);
-            this.txtTelefonoAlumno.Name = "txtTelefonoAlumno";
-            this.txtTelefonoAlumno.Size = new System.Drawing.Size(249, 20);
-            this.txtTelefonoAlumno.TabIndex = 5;
-            // 
-            // lblTelefonoAlumno
-            // 
-            this.lblTelefonoAlumno.AutoSize = true;
-            this.lblTelefonoAlumno.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefonoAlumno.Location = new System.Drawing.Point(45, 190);
-            this.lblTelefonoAlumno.Name = "lblTelefonoAlumno";
-            this.lblTelefonoAlumno.Size = new System.Drawing.Size(92, 20);
-            this.lblTelefonoAlumno.TabIndex = 4;
-            this.lblTelefonoAlumno.Text = "Telefono:";
-            // 
-            // txtDuiAlumno
-            // 
-            this.txtDuiAlumno.Location = new System.Drawing.Point(158, 233);
-            this.txtDuiAlumno.Name = "txtDuiAlumno";
-            this.txtDuiAlumno.Size = new System.Drawing.Size(249, 20);
-            this.txtDuiAlumno.TabIndex = 7;
-            // 
-            // lblDuiAlumno
-            // 
-            this.lblDuiAlumno.AutoSize = true;
-            this.lblDuiAlumno.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDuiAlumno.Location = new System.Drawing.Point(45, 233);
-            this.lblDuiAlumno.Name = "lblDuiAlumno";
-            this.lblDuiAlumno.Size = new System.Drawing.Size(47, 20);
-            this.lblDuiAlumno.TabIndex = 6;
-            this.lblDuiAlumno.Text = "Dui:";
+            this.lblCodigoAlumno.AutoSize = true;
+            this.lblCodigoAlumno.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigoAlumno.Location = new System.Drawing.Point(45, 48);
+            this.lblCodigoAlumno.Name = "lblCodigoAlumno";
+            this.lblCodigoAlumno.Size = new System.Drawing.Size(79, 20);
+            this.lblCodigoAlumno.TabIndex = 0;
+            this.lblCodigoAlumno.Text = "Codigo:";
             // 
             // grbNavegacionAlumnos
             // 
@@ -168,14 +168,32 @@ namespace WindowsFormsApp1
             this.grbNavegacionAlumnos.TabStop = false;
             this.grbNavegacionAlumnos.Text = "Navegacion";
             // 
-            // grbEdicionAlumnos
+            // btnUltimoAlumno
             // 
-            this.grbEdicionAlumnos.Location = new System.Drawing.Point(486, 322);
-            this.grbEdicionAlumnos.Name = "grbEdicionAlumnos";
-            this.grbEdicionAlumnos.Size = new System.Drawing.Size(291, 100);
-            this.grbEdicionAlumnos.TabIndex = 2;
-            this.grbEdicionAlumnos.TabStop = false;
-            this.grbEdicionAlumnos.Text = "Navegacion";
+            this.btnUltimoAlumno.Location = new System.Drawing.Point(234, 37);
+            this.btnUltimoAlumno.Name = "btnUltimoAlumno";
+            this.btnUltimoAlumno.Size = new System.Drawing.Size(40, 36);
+            this.btnUltimoAlumno.TabIndex = 3;
+            this.btnUltimoAlumno.Text = ">";
+            this.btnUltimoAlumno.UseVisualStyleBackColor = true;
+            // 
+            // btnSiguienteAlumno
+            // 
+            this.btnSiguienteAlumno.Location = new System.Drawing.Point(176, 37);
+            this.btnSiguienteAlumno.Name = "btnSiguienteAlumno";
+            this.btnSiguienteAlumno.Size = new System.Drawing.Size(40, 36);
+            this.btnSiguienteAlumno.TabIndex = 2;
+            this.btnSiguienteAlumno.Text = ">";
+            this.btnSiguienteAlumno.UseVisualStyleBackColor = true;
+            // 
+            // btnAnteriorAlumno
+            // 
+            this.btnAnteriorAlumno.Location = new System.Drawing.Point(52, 37);
+            this.btnAnteriorAlumno.Name = "btnAnteriorAlumno";
+            this.btnAnteriorAlumno.Size = new System.Drawing.Size(40, 36);
+            this.btnAnteriorAlumno.TabIndex = 1;
+            this.btnAnteriorAlumno.Text = "<";
+            this.btnAnteriorAlumno.UseVisualStyleBackColor = true;
             // 
             // btnPrimerAlumno
             // 
@@ -187,32 +205,14 @@ namespace WindowsFormsApp1
             this.btnPrimerAlumno.UseVisualStyleBackColor = true;
             this.btnPrimerAlumno.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnAnteriorAlumno
+            // grbEdicionAlumnos
             // 
-            this.btnAnteriorAlumno.Location = new System.Drawing.Point(52, 37);
-            this.btnAnteriorAlumno.Name = "btnAnteriorAlumno";
-            this.btnAnteriorAlumno.Size = new System.Drawing.Size(40, 36);
-            this.btnAnteriorAlumno.TabIndex = 1;
-            this.btnAnteriorAlumno.Text = "<";
-            this.btnAnteriorAlumno.UseVisualStyleBackColor = true;
-            // 
-            // btnSiguienteAlumno
-            // 
-            this.btnSiguienteAlumno.Location = new System.Drawing.Point(176, 37);
-            this.btnSiguienteAlumno.Name = "btnSiguienteAlumno";
-            this.btnSiguienteAlumno.Size = new System.Drawing.Size(40, 36);
-            this.btnSiguienteAlumno.TabIndex = 2;
-            this.btnSiguienteAlumno.Text = ">";
-            this.btnSiguienteAlumno.UseVisualStyleBackColor = true;
-            // 
-            // btnUltimoAlumno
-            // 
-            this.btnUltimoAlumno.Location = new System.Drawing.Point(234, 37);
-            this.btnUltimoAlumno.Name = "btnUltimoAlumno";
-            this.btnUltimoAlumno.Size = new System.Drawing.Size(40, 36);
-            this.btnUltimoAlumno.TabIndex = 3;
-            this.btnUltimoAlumno.Text = ">";
-            this.btnUltimoAlumno.UseVisualStyleBackColor = true;
+            this.grbEdicionAlumnos.Location = new System.Drawing.Point(488, 322);
+            this.grbEdicionAlumnos.Name = "grbEdicionAlumnos";
+            this.grbEdicionAlumnos.Size = new System.Drawing.Size(291, 100);
+            this.grbEdicionAlumnos.TabIndex = 2;
+            this.grbEdicionAlumnos.TabStop = false;
+            this.grbEdicionAlumnos.Text = "Navegacion";
             // 
             // Form1
             // 
