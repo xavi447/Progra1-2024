@@ -46,8 +46,14 @@ namespace WindowsFormsApp1
             this.btnAnteriorAlumno = new System.Windows.Forms.Button();
             this.btnPrimerAlumno = new System.Windows.Forms.Button();
             this.grbEdicionAlumnos = new System.Windows.Forms.GroupBox();
+            this.btnNuevo = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnBuscarAlumno = new System.Windows.Forms.Button();
+            this.lblregistro = new System.Windows.Forms.Button();
             this.grbDatosAlumnos.SuspendLayout();
             this.grbNavegacionAlumnos.SuspendLayout();
+            this.grbEdicionAlumnos.SuspendLayout();
             this.SuspendLayout();
             // 
             // grbDatosAlumnos
@@ -62,6 +68,7 @@ namespace WindowsFormsApp1
             this.grbDatosAlumnos.Controls.Add(this.lblNombreAlumno);
             this.grbDatosAlumnos.Controls.Add(this.txtCodigoAlumnos);
             this.grbDatosAlumnos.Controls.Add(this.lblCodigoAlumno);
+            this.grbDatosAlumnos.Enabled = false;
             this.grbDatosAlumnos.Location = new System.Drawing.Point(28, 12);
             this.grbDatosAlumnos.Name = "grbDatosAlumnos";
             this.grbDatosAlumnos.Size = new System.Drawing.Size(603, 289);
@@ -157,6 +164,7 @@ namespace WindowsFormsApp1
             // 
             // grbNavegacionAlumnos
             // 
+            this.grbNavegacionAlumnos.Controls.Add(this.lblregistro);
             this.grbNavegacionAlumnos.Controls.Add(this.btnUltimoAlumno);
             this.grbNavegacionAlumnos.Controls.Add(this.btnSiguienteAlumno);
             this.grbNavegacionAlumnos.Controls.Add(this.btnAnteriorAlumno);
@@ -207,12 +215,61 @@ namespace WindowsFormsApp1
             // 
             // grbEdicionAlumnos
             // 
-            this.grbEdicionAlumnos.Location = new System.Drawing.Point(488, 322);
+            this.grbEdicionAlumnos.Controls.Add(this.btnBuscarAlumno);
+            this.grbEdicionAlumnos.Controls.Add(this.btnEliminar);
+            this.grbEdicionAlumnos.Controls.Add(this.btnModificar);
+            this.grbEdicionAlumnos.Controls.Add(this.btnNuevo);
+            this.grbEdicionAlumnos.Location = new System.Drawing.Point(486, 322);
             this.grbEdicionAlumnos.Name = "grbEdicionAlumnos";
             this.grbEdicionAlumnos.Size = new System.Drawing.Size(291, 100);
             this.grbEdicionAlumnos.TabIndex = 2;
             this.grbEdicionAlumnos.TabStop = false;
             this.grbEdicionAlumnos.Text = "Navegacion";
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Location = new System.Drawing.Point(6, 37);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(63, 36);
+            this.btnNuevo.TabIndex = 3;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.Location = new System.Drawing.Point(75, 37);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(63, 36);
+            this.btnModificar.TabIndex = 4;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(144, 37);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(63, 36);
+            this.btnEliminar.TabIndex = 5;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            // 
+            // btnBuscarAlumno
+            // 
+            this.btnBuscarAlumno.Location = new System.Drawing.Point(213, 37);
+            this.btnBuscarAlumno.Name = "btnBuscarAlumno";
+            this.btnBuscarAlumno.Size = new System.Drawing.Size(63, 36);
+            this.btnBuscarAlumno.TabIndex = 6;
+            this.btnBuscarAlumno.Text = "Buscar";
+            this.btnBuscarAlumno.UseVisualStyleBackColor = true;
+            // 
+            // lblregistro
+            // 
+            this.lblregistro.Location = new System.Drawing.Point(98, 37);
+            this.lblregistro.Name = "lblregistro";
+            this.lblregistro.Size = new System.Drawing.Size(63, 36);
+            this.lblregistro.TabIndex = 4;
+            this.lblregistro.Text = "X de n";
+            this.lblregistro.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -223,11 +280,12 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.grbNavegacionAlumnos);
             this.Controls.Add(this.grbDatosAlumnos);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Administracion de Alumnos ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.grbDatosAlumnos.ResumeLayout(false);
             this.grbDatosAlumnos.PerformLayout();
             this.grbNavegacionAlumnos.ResumeLayout(false);
+            this.grbEdicionAlumnos.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -251,6 +309,11 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button btnAnteriorAlumno;
         private System.Windows.Forms.Button btnUltimoAlumno;
         private System.Windows.Forms.Button btnSiguienteAlumno;
+        private System.Windows.Forms.Button lblregistro;
+        private System.Windows.Forms.Button btnBuscarAlumno;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnNuevo;
     }
 }
 
